@@ -2,7 +2,7 @@ addons:
   artifacts:
     debug: true
     paths: [libs.zip, build.zip, testbuild.zip]
-    target_paths: 3d5f18f4-48bc-431c-b920-23e696892b73
+    target_paths: 4c2f8fb1-acef-4f5a-a326-e654c6325e8c
 after_success: [chmod -R 777 ./travis/deploy-to-sonatype.sh, ./travis/deploy-to-sonatype.sh]
 env:
   global:
@@ -12,4 +12,4 @@ jdk: [oraclejdk7]
 language: java
 script: [mvn package --settings travis/settings.xml;./df-build.sh]
 sudo: false
-# Modified by Insights Service at 2016-03-17 13:15:06.034803
+# Modified by Insights Service at 2016-03-31 10:49:09.018328
